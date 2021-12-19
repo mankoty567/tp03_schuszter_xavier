@@ -10,6 +10,7 @@ import {
 } from '@angular/forms';
 import { ClientServiceService } from './client-service.service';
 
+//Non fonctionnel pour le moment ... malheureusement.
 @Component({
   selector: 'app-user-creation',
   templateUrl: './user-creation.component.html',
