@@ -37,10 +37,10 @@ export class UserCreationComponent implements OnInit {
         postalCode: ['', Validators.required],
         tel: [
           '',
-          Validators.required,
-          Validators.pattern(/^(\d{3})(\d{3})(\d{4})$/),
+          [Validators.required,
+          Validators.pattern(/^(\d{3})(\d{3})(\d{4})$/)],
         ],
-        mail: ['', Validators.required, Validators.email],
+        mail: ['', [Validators.required, Validators.email]],
         civ: ['', Validators.required],
         login: ['', Validators.required],
         password: ['', Validators.required],
